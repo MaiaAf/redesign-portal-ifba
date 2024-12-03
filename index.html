@@ -1,62 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portal IFBA Jacobina</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="header">
-
-        <header class="grid grid-cols-2">
-            <div>
-                <h1>Instituto Federal da Bahia</h1>
-            </div>
-            <div id="pesquisa">
-                <input type="text" name="" id="" placeholder="Buscar">
-            </div>
-        </header>
-        <nav>
-            <a href="#biblioteca">Biblioteca</a>
-            <a href="#ti">Tecnologia da informação</a>
-            <a href="#campus">Campus</a>
-            <a href="#inicio">Início</a>
-        </nav>
+      <header class="grid grid-cols-2">
+        <div>
+          <h1>Instituto Federal da Bahia</h1>
+        </div>
+        <div id="pesquisa">
+          <input type="text" name="" id="" placeholder="Buscar" />
+        </div>
+      </header>
+      <nav>
+        <a href="#biblioteca">Biblioteca</a>
+        <a href="#ti">Tecnologia da informação</a>
+        <a href="#campus">Campus</a>
+        <a href="#inicio">Início</a>
+      </nav>
     </div>
     <main>
-        <section id="inicio">
-            <h1>Hero page</h1>
-        </section>
-        
-        <section id="campus">
-            <h1>Seção campus</h1>
-        </section>
-        <section id="ti">
-            <h1>Seção TI</h1>
-        </section>
-        <section id="biblioteca">
-            <h1>Seção da biblioteca</h1>
-        </section>
+      <section id="inicio">
+        <h1>Hero page</h1>
+      </section>
+
+      <section id="campus">
+        <h1>Seção campus</h1>
+      </section>
+      <section id="ti">
+        <h1>Seção TI</h1>
+      </section>
+      <section id="biblioteca">
+        <h1>Seção da biblioteca</h1>
+      </section>
     </main>
-
-
 
     <footer></footer>
 
-
     <script>
-        // Redirecionar suave dos links
-        var $root = $('html, body');
+      // Redirecionar suave dos links
+      var $root = $("html, body");
 
-        $('a[href^="#"]').click(function () {
-            $root.animate({
-                scrollTop: $( $.attr(this, 'href') ).offset().top
-            }, 500);
+      $('a[href^="#"]').click(function () {
+        $root.animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top,
+          },
+          500,
+        );
 
-            return false;
-        });
+        return false;
+      });
     </script>
-</body>
+  </body>
 </html>
