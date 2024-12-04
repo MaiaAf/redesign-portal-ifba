@@ -126,11 +126,17 @@ section {
   padding: 3rem;
 }
 
+/* img  */
+ nav img{
+  max-width: 50%;
+}
+
 /* Footer */
 
 footer {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 1em;
   background-image: linear-gradient(to top, #047857, #059669);
 }
 
@@ -145,5 +151,9 @@ footer {
   header {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  nav img{
+    max-width: 100%;
   }
 }
