@@ -22,6 +22,15 @@ nav a:hover {
   scale: 105%;
 }
 
+a i {
+  font-size: 1.5rem;
+
+  &:hover {
+    color: #fcd34d;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+}
 .col-2 {
   /*grid grid-cols-2*/
   display: grid;
@@ -148,11 +157,34 @@ footer {
   }
 }
 
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li {
+  background-color: #064e3b;
+  border-radius: 2rem;
+  transition: all;
+  transition-duration: 300ms;
+  margin: 0.25rem;
+  padding: 0.1rem;
+
+  &:hover {
+    background-color: #047857;
+  }
+}
 #fnav-direita {
   display: flex;
   justify-content: end;
 }
 
+#logo-if-jacobina {
+  align-self: center;
+
+  img{
+    border-radius: 3rem;
+  }
+}
 /* Media queries */
 @media (max-width: 640px) {
   #logo {
