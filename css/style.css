@@ -70,6 +70,15 @@ a i {
     transition-duration: 300ms;
   }
 }
+
+#subir{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: #064e3b;
+}
+
+/* Grades */
 .col-2-r,
 .col-2 {
   /* grid grid-cols-2 */
