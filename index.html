@@ -11,8 +11,8 @@
   <!--   Css do Jquerrymodal -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <!--   Css principal -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="scroll.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/scroll.css" />
 </head>
 
 <body>
@@ -30,17 +30,17 @@
       </div>
     </header>
     <nav>
-      <a href="#biblioteca">Biblioteca</a>
-      <a href="#ti">Tecnologia da informação</a>
-      <a href="#campus">Campus</a>
-      <a href="#inicio">Início</a>
+      <a href="#biblioteca" name="suave">Biblioteca</a>
+      <a href="#ti" name="suave">Tecnologia da informação</a>
+      <a href="#campus" name="suave">Campus</a>
+      <a href="#inicio" name="suave">Início</a>
     </nav>
   </div>
   <main>
-    <section id="inicio" class="col-2">
+    <section id="inicio" class="col-2-r sm-col-2">
       <div class="escondido slide-l">
         <h1>Sabia que você pode estudar conosco?</h1>
-        <p>Ensino gratuito e de qualidade </p>
+        <span>IFBA: Ensino gratuito e de qualidade </span>
       </div>
       <div class="escondido delay-2 slide-r borrado">
         <picture>
@@ -50,12 +50,69 @@
       </div>
     </section>
     <section id="campus" class="escondido">
-      <h1>Seção campus</h1>
+      <h1>O Campus</h1>
+      <div class="center">
+        <div class="cite escondido slide-l">
+          <p>"Rodeada de serras majestosas,</p>
+          <p>dos Payayá herdamos Jacobina,</p>
+          <p>a mais linda terra entre as formosas,</p>
+          <p>na encosta da Chapada Diamantina..."</p>
+          <span>Trecho do Hino à Jacobina - Doracy Lemos</span>
+        </div>
+      </div>
+      <div class="col-2 sm-col-2">
+        <picture>
+          <source srcset="img/fachada-lateral.avif">
+          <img src="img/fachada-lateral.webp" alt="Fachada lateral do Ifba Jacobina">
+        </picture>
+        <div>
+          <p>
+            Situada no estado da Bahia, extremo norte da Chapada Diamantina, a cerca de 330 km de Salvador, a cidade de
+            Jacobina tem mais de 80 mil habitantes. Rodeado por serras, lagoas, grutas, rios e cachoeiras, o município se
+            destaca pelo potencial ambiental, com diversos atrativos voltados ao ecoturismo, bem como cultural, sendo
+            palco de manifestações tradicionais e artísticas singulares. Com uma história diretamente ligada à atividade
+            mineradora, Jacobina é também conhecida como a Cidade do Ouro.
+          </p>
+          <p>
+            É nesse lugar diferenciado que nasce o nosso campus. Fruto da segunda fase da expansão da Rede Federal de
+            Educação Profissional, Científica e Tecnológica, o Campus Jacobina do IFBA foi inaugurado simbolicamente em
+            Brasília, no ano de 2010, começando seu funcionamento em 2011.
+          </p>
+        </div>
+        <p>
+          Atualmente, oferece os cursos técnicos integrados e subsequentes ao ensino médio de informática,
+          eletromecânica e mineração, além da formação de meio ambiente, disponível na forma subsequente. Ainda dispõe
+          da licenciatura em computação, seu primeiro curso de nível superior. Nosso campus também já ofertou cursos
+          profissionalizantes de curta duração, bem como semipresenciais de nível técnico, com destaque para as
+          formações em guia de turismo e informática. </p>
+        </div>
+        <section>
+          <h2>O IFBA</h2>
+          </p>
+          <p>
+            O Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA), criado pela Lei nº 11.892/2008, é
+            resultado das mudanças promovidas no antigo Centro Federal de Educação Tecnológica da Bahia (Cefet-BA).
+            Autarquia do Governo Federal, a instituição existe há mais de 100 anos, estabelecendo-se, em 1910, na capital
+            baiana, como a primeira Escola de Aprendizes Artífices do país.</p>
+          <p>
+            Ao longo de sua trajetória, recebeu distintas denominações, como Liceu Industrial de Salvador, em 1937; Escola
+            Técnica de Salvador (ETS), em 1942; Escola Técnica Federal da Bahia (ETFBA), em 1965; Centro Federal de
+            Educação Tecnológica da Bahia (Cefet/BA), resultado da fusão entre o Centro de Educação Tecnológica da Bahia
+            (Centec) e a ETFBA, em 1993, até chegar ao atual IFBA, em 2008.</p>
+          </P>
+          <P>
+            Com a última transformação, o Instituto passa a ter características bem peculiares: equipara-se às
+            universidades federais, atuando com a verticalização do ensino, da educação básica e profissional à superior,
+            além de apresentar estrutura pluricurricular e multicampi. Hoje o IFBA está em mais de 20 cidades da Bahia,
+            dentre elas, Jacobina.</p>
+          </P>
+          <P>Conheça mais sobre a história dessa instituição centenária neste vídeo e no Portal IFBA.</p>
+        </section>
     </section>
     <section id="ti" class="escondido">
       <h1>Seção TI</h1>
     </section>
-    <section id="biblioteca" class="col-2 escondido">
+    <section id="biblioteca" class="col-2 sm-col-2 escondido">
       <div>
         <h1>Biblioteca</h1>
         <img src="img/entrada-biblioteca.jpg" alt="">
@@ -118,28 +175,69 @@
         <p><strong>Ramal:</strong>8710</p>
         <p><strong>E-mail: </strong>biblioteca.jac@ifba.edu.br</p>
       </div>
+      <!-- Tiny-Swiper -->
+  <div class="swiper-container">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">
+       <img
+         src="img/entrada-biblioteca.jpg"
+       />
+     </div>
+     <div class="swiper-slide">
+       <img
+         src="img/prateleira-livros.jpg"
+       />
+     </div>
+     <div class="swiper-slide">
+       <img
+         src="img/livros.jpg"
+       />
+   </div>
+  </div>
+  
+  <button class="anterior">
+    <i class="fa-solid fa-arrow-left"></i>
+  </button>
+  <button class="proximo">
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
     </section>
 
     <section id="ti" class="escondido">
       <h1>Entrar em contato</h1>
       <br />
-      <div id="ex1" class="modal">
-        <form>
-          <fieldset>
+      <!-- Modal do formulário -->
+      <div id="modal-form" class="modal">
+        <form id="form" action='javascript:enviar()'>
+          <fieldset class="col-2">
             <label>Nome</label>
-            <input type="text" />
-            <br />
+            <input required type="text" />
             <label>Email</label>
-            <input type="email" />
-            <br />
-            <input type="submit" />
-          </fieldset>
+            <input required type="email" />
+            <label>Categoria</label>
+            <select name="categoria" id="">
+              <option value="estudante">Estudante</option>
+              <option value="professor">Professor</option>
+              <option value="tae">Técnico administrativo escolar</option>
+              <option value="externo">Público externo</option>
+            </select>
+            <label>Mensagem</label>
+            <textarea name="msg" id="" rows="10" cols="20"></textarea>
+            <input type="submit" value="Enviar"/>
         </form>
-        <a href="#" rel="modal:close">Close</a>
       </div>
+      <script>
+        function enviar(){
+          $('#modal-confirm').modal();
+        }
+      </script>
+      <!-- Link para formulário -->
+      <a href="#modal-form" class="a-btn" rel="modal:open">Clique para entrar em contato</a>
 
-      <!-- Link to open the modal -->
-      <p><a href="#ex1" rel="modal:open">Clique para entrar em contato</a></p>
+      <div id="modal-confirm" class="modal">
+        <h1 style="color: #059669;">Parabéns! Seu formulário foi enviado!</h1>
+        <a href="#" rel="modal:close"></a>
+      </div>
     </section>
   </main>
 
@@ -230,21 +328,10 @@
     </nav>
   </div>
 
-  <script>
-    // Redirecionar suave dos links
-    var $root = $("html, body");
 
-    $('a[href^="#"]').click(function () {
-      $root.animate(
-        {
-          scrollTop: $($.attr(this, "href")).offset().top,
-        },
-        500,
-      );
-
-      return false;
-    });
-  </script>
+  <a href="#header" id="subir">
+    <i class="fa-solid fa-up-long"></i>
+  </a>
 </body>
 <!--   Plugin Vlibras -->
 <div vw class="enabled">
@@ -254,7 +341,6 @@
   </div>
 </div>
 <!--   Linkando scripts no fim da página-->
-<script src="scroll.js"></script>
 
 <!-- Vlibras -->
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
@@ -271,5 +357,14 @@
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!--   biblioteca Jquerrymodal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+<!-- Tiny-Swiper JS -->
+<script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
+
+<link rel="stylesheet" href="css/carrosel.css">
+<!-- Scripts locais -->
+<script src="scripts/scroll.js"></script>
+<script src="scripts/carrosel.js"></script>
 
 </html>
