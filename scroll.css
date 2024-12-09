@@ -1,0 +1,42 @@
+
+/* Utilitários */
+.slide-l{
+  translate: -100% 0px;
+}
+
+.slide-r{
+  translate: 100% 0px;
+}
+
+.borrado{
+  filter: blur(5px);
+}
+
+.delay-1{
+  animation-delay: 200ms;
+}
+
+.delay-2{
+  animation-delay: 400ms;
+}
+
+.delay-3{
+  animation-delay: 600ms;
+}
+
+
+.escondido {
+  opacity: 0;
+}
+
+.aparecer {
+  opacity: 1;
+  filter: blur(0px);
+  translate: 0% 0px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .escondido {
+    transition: all 2s;
+    
+  }
+}

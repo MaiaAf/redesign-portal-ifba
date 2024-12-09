@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Portal IFBA Jacobina</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scroll.css" />
   </head>
   <body>
     <div id="header">
@@ -34,17 +35,25 @@
       </nav>
     </div>
     <main>
-      <section id="inicio">
-        <h1>Hero page</h1>
+      <section id="inicio" class="col-2">
+        <div class="escondido slide-l">
+          <h1>Sabia que você pode estudar conosco?</h1>
+          <p>Ensino gratuito e de qualidade </p>
+        </div>
+        <div class="escondido delay-2 slide-r borrado">
+          <picture>
+            <source srcset="img/campusjacobina_A.avif" type="image/avif">
+            <img src="img/campusjacobina_A.webp" alt="">
+          </picture>
+        </div>
       </section>
-
-      <section id="campus">
+      <section id="campus" class="escondido">
         <h1>Seção campus</h1>
       </section>
-      <section id="ti">
+      <section id="ti" class="escondido">
         <h1>Seção TI</h1>
       </section>
-      <section id="biblioteca">
+      <section id="biblioteca" class="escondido">
         <h1>Seção da biblioteca</h1>
       </section>
     </main>
@@ -54,9 +63,9 @@
         <div id="logo-if-jacobina">
           <picture>
             <source srcset="img/Logo_jacobina.avif" type="image/avif" />
-            <img src="img/Logo_jacobina.webp"/>
+            <img src="img/Logo_jacobina.webp" />
           </picture>
-          <br>
+          <br />
           <a href="https://twitter.com/ifbaoficial">
             <i class="fa-brands fa-twitter"> </i>
           </a>
@@ -180,6 +189,7 @@
     </div>
   </div>
   <!--   Linkando scripts no fim da página-->
+  <script src="scroll.js"></script>
 
   <!-- Vlibras -->
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>

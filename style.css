@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Links */
@@ -10,6 +11,15 @@ a {
   padding: 0.5rem;
   text-decoration: none;
   color: white;
+}
+
+section a {
+  background-color: #064e3b;
+  border-radius: 3rem;
+  transition: all 1s;
+  &:hover {
+    background-color: #047857;
+  }
 }
 
 nav a:hover {
@@ -32,9 +42,11 @@ a i {
   }
 }
 .col-2 {
-  /*grid grid-cols-2*/
+  /* grid grid-cols-2 */
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-items: center;
+  align-items: center;
 }
 /* Cabeçalho */
 .header {
@@ -43,8 +55,7 @@ a i {
 }
 footer,
 header {
-  /* p-3 text-white bg-emerald-600 m-0 */
-  padding: 0.75rem;
+  padding: 0.25rem 0.75rem;
   color: white;
   margin: 0;
 
@@ -114,28 +125,22 @@ h1 {
 section {
   height: 100dvh;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
-#inicio {
-  background-color: azure;
-  padding: 3rem;
-}
-#biblioteca {
-  background-color: teal;
-  padding: 3rem;
-}
-#campus {
-  background-color: coral;
-  padding: 3rem;
-}
-#ti {
-  background-color: darkviolet;
-  padding: 3rem;
+#inicio,
+#biblioteca,
+#campus,
+#ti{
+  padding: 0.25rem 3rem ;
+  color: black;
 }
 
 /* img  */
+img {
+  max-width: 100%;
+}
 nav img {
   max-width: 50%;
 }
@@ -181,7 +186,7 @@ footer ul li {
 #logo-if-jacobina {
   align-self: center;
 
-  img{
+  img {
     border-radius: 3rem;
   }
 }
