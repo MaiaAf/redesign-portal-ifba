@@ -52,7 +52,7 @@
     <section id="campus" class="escondido">
       <h1>O Campus</h1>
       <div class="center">
-        <div class="cite">
+        <div class="cite escondido slide-l">
           <p>"Rodeada de serras majestosas,</p>
           <p>dos Payayá herdamos Jacobina,</p>
           <p>a mais linda terra entre as formosas,</p>
@@ -321,21 +321,6 @@
   <a href="#" id="subir">
     <i class="fa-solid fa-up-long"></i>
   </a>
-  <script>
-    // Redirecionar suave dos links
-    var $root = $("html, body");
-
-    $('a[href^="#"]').click(function () {
-      $root.animate(
-        {
-          scrollTop: $($.attr(this, "href")).offset().top,
-        },
-        500,
-      );
-
-      return false;
-    });
-  </script>
 </body>
 <!--   Plugin Vlibras -->
 <div vw class="enabled">
