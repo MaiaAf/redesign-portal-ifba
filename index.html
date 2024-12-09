@@ -1,243 +1,275 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Portal, IFBA, Jacobina" />
-    <meta name="description" content="Portal do IFBA JAcobina redesenhado" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <title>Portal IFBA Jacobina</title>
-    <!--   Css do Jquerrymodal -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
-    />
-    <!--   Css principal -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="scroll.css" />
-  </head>
-  <body>
-    <div id="header">
-      <header>
-        <div>
-          <a href="index.html" id="logo">
-            <img
-              id="logoimg"
-              src="img/MARCA_IFBA_VERTICAL_negativaBRANCA_IFBA.png"
-            />
 
-            <h1>Instituto Federal da Bahia</h1>
-          </a>
-        </div>
-        <div id="pesquisa">
-          <input type="text" name="" id="" placeholder="Buscar" />
-        </div>
-      </header>
-      <nav>
-        <a href="#biblioteca">Biblioteca</a>
-        <a href="#ti">Tecnologia da informação</a>
-        <a href="#campus">Campus</a>
-        <a href="#inicio">Início</a>
-      </nav>
-    </div>
-    <main>
-      <section id="inicio" class="col-2">
-        <div class="escondido slide-l">
-          <h1>Sabia que você pode estudar conosco?</h1>
-          <p>Ensino gratuito e de qualidade </p>
-        </div>
-        <div class="escondido delay-2 slide-r borrado">
-          <picture>
-            <source srcset="img/campusjacobina_A.avif" type="image/avif">
-            <img src="img/campusjacobina_A.webp" alt="">
-          </picture>
-        </div>
-      </section>
-      <section id="campus" class="escondido">
-        <h1>Seção campus</h1>
-      </section>
-      <section id="ti" class="escondido">
-        <h1>Seção TI</h1>
-      </section>
-      <section id="biblioteca" class="escondido">
-        <h1>Seção da biblioteca</h1>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Portal, IFBA, Jacobina" />
+  <meta name="description" content="Portal do IFBA JAcobina redesenhado" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <title>Portal IFBA Jacobina</title>
+  <!--   Css do Jquerrymodal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <!--   Css principal -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="scroll.css" />
+</head>
 
-      <section id="ti" class="escondido">
-        <h1>Entrar em contato</h1>
-        <br />
-        <div id="ex1" class="modal">
-          <form>
-            <fieldset>
-              <label>Nome</label>
-              <input type="text" />
-              <br />
-              <label>Email</label>
-              <input type="email" />
-              <br />
-              <input type="submit" />
-            </fieldset>
-          </form>
-          <a href="#" rel="modal:close">Close</a>
-        </div>
+<body>
+  <div id="header">
+    <header>
+      <div>
+        <a href="index.html" id="logo">
+          <img id="logoimg" src="img/MARCA_IFBA_VERTICAL_negativaBRANCA_IFBA.png" />
 
-        <!-- Link to open the modal -->
-        <p><a href="#ex1" rel="modal:open">Clique para entrar em contato</a></p>
-      </section>
-    </main>
-
-    <div>
-      <footer>
-        <div id="logo-if-jacobina">
-          <picture>
-            <source srcset="img/Logo_jacobina.avif" type="image/avif" />
-            <img src="img/Logo_jacobina.webp" />
-          </picture>
-          <br />
-          <a href="https://twitter.com/ifbaoficial">
-            <i class="fa-brands fa-twitter"> </i>
-          </a>
-          <a href="https://www.facebook.com/InstitutoFederaldaBahia">
-            <i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/ifbaoficial/">
-            <i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://www.youtube.com/channel/UCyCPdBXqatYjrOhqY0k3sMQ">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </div>
-        <div>
-          <h1>Institucional</h1>
-          <ul>
-            <li><a href="">O Instituto</a></li>
-            <li><a href="">Memória </a></li>
-            <li><a href="">Organograma</a></li>
-            <li><a href="">Quem é quem</a></li>
-            <li><a href="">Atribuições e cargos</a></li>
-            <li><a href="">Eleições</a></li>
-            <li><a href="">Processos seletivos</a></li>
-            <li><a href="">Assessoria internacional</a></li>
-            <li><a href="">Contatos</a></li>
-            <li><a href="">Fale conosco</a></li>
-          </ul>
-        </div>
-        <div>
-          <h1>Ensino</h1>
-          <ul>
-            <li><a> Seja nosso aluno</a></li>
-            <li><a> Tipos de cursos</a></li>
-            <li><a> Nossos cursos</a></li>
-            <li><a> Ensino a distância</a></li>
-            <li><a> Assistência estudantil</a></li>
-            <li><a> Processo Seletivo 2024</a></li>
-            <li><a> Certificação ENCCEJA/ENEM</a></li>
-            <li><a> SISU</a></li>
-            <li><a> Perguntas Frequentes</a></li>
-          </ul>
-        </div>
-      </footer>
-      <nav class="col-2">
-        <a href="https://gov.br">
-          <picture>
-            <source
-              srcset="img/governo-federal-brasil.avif"
-              type="image/avif"
-            />
-            <img
-              src="img/governo-federal-brasil.webp"
-              alt="Logo do Governo Federal"
-            />
-          </picture>
+          <h1>Instituto Federal da Bahia</h1>
         </a>
-
-        <a href="http://www.gov.br/acessoainformacao/">
-          <picture id="fnav-direita">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 117 49"
-              height="150"
-              shape-rendering="geometricPrecision"
-              text-rendering="geometricPrecision"
-            >
-              <defs>
-                <style type="text/css">
-                  .a {
-                    font:
-                      normal bold 11px Open Sans,
-                      sans-serif;
-                  }
-                </style>
-              </defs>
-              <circle cx="22" cy="23" r="22" fill="#fff"></circle>
-              <!-- tailwind blue 950 -->
-              <path
-                style="stroke: #172554; stroke-width: 9; stroke-linecap: round"
-                d="m 22,23 v 13"
-              ></path>
-              <path
-                style="stroke: #fff; stroke-width: 4; stroke-linejoin: round"
-                d="m 4,43 3,-6 4,3 z"
-              ></path>
-              <circle r="4.5" cy="11" cx="22" fill="#172554"></circle>
-              <g fill="#fff">
-                <text x="47" y="22">
-                  <tspan class="a" y="18">Acesso à</tspan>
-                  <tspan class="a" x="47" y="31">Informação</tspan>
-                </text>
-              </g>
-            </svg>
-          </picture>
-        </a>
-      </nav>
-    </div>
-
-    <script>
-      // Redirecionar suave dos links
-      var $root = $("html, body");
-
-      $('a[href^="#"]').click(function () {
-        $root.animate(
-          {
-            scrollTop: $($.attr(this, "href")).offset().top,
-          },
-          500,
-        );
-
-        return false;
-      });
-    </script>
-  </body>
-  <!--   Plugin Vlibras -->
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
+      </div>
+      <div id="pesquisa">
+        <input type="text" name="" id="" placeholder="Buscar" />
+      </div>
+    </header>
+    <nav>
+      <a href="#biblioteca">Biblioteca</a>
+      <a href="#ti">Tecnologia da informação</a>
+      <a href="#campus">Campus</a>
+      <a href="#inicio">Início</a>
+    </nav>
   </div>
-  <!--   Linkando scripts no fim da página-->
-  <script src="scroll.js"></script>
+  <main>
+    <section id="inicio" class="col-2">
+      <div class="escondido slide-l">
+        <h1>Sabia que você pode estudar conosco?</h1>
+        <p>Ensino gratuito e de qualidade </p>
+      </div>
+      <div class="escondido delay-2 slide-r borrado">
+        <picture>
+          <source srcset="img/campusjacobina_A.avif" type="image/avif">
+          <img src="img/campusjacobina_A.webp" alt="">
+        </picture>
+      </div>
+    </section>
+    <section id="campus" class="escondido">
+      <h1>Seção campus</h1>
+    </section>
+    <section id="ti" class="escondido">
+      <h1>Seção TI</h1>
+    </section>
+    <section id="biblioteca" class="col-2 escondido">
+      <div>
+        <h1>Biblioteca</h1>
+        <img src="img/entrada-biblioteca.jpg" alt="">
+      </div>
+      <div>
+        <p>É o espaço voltado para o armazenamento, a organização, disseminação e conservação do acervo bibliográfico do
+          campus, que reúne livros literários e técnicos, dicionários, periódicos, mapas, mídias (CDs e DVDs),
+          publicações
+          institucionais, como boletins informativos e revistas científicas, além dos TCCs dos alunos, somando mais de
+          mil
+          títulos e quase oito (8) mil exemplares. O setor ainda dispõe de computadores com acesso à internet para
+          pesquisas
+          acadêmicas e salas de estudo em grupo e individual.</p>
+        <p>Para usufruir do acervo, através de consulta ou empréstimo domiciliar, o(a) interessado(a) deve comparecer
+          pessoalmente, a fim de efetivar sua solicitação.</p>
+        <p>Lembrando que é necessário seguir as instruções dos avisos, sobretudo quanto ao silêncio e à proibição de
+          fazer refeições no recinto. Saiba mais <a
+            href="https://portal.ifba.edu.br/jacobina/ensino/anexos/biblioteca_normas.pdf">aqui</a></p>
+      </div>
 
-  <!-- Vlibras -->
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <div>
+        <h3>Empréstimo Dimiciliar</h3>
+        <p>Autorizado após cadastro no Sistema Integrado de Bibliotecas, o Pergamum. Destina-se a toda a comunidade IFBA
+          (estudantes devidamente matriculados, professores, técnicos administrativos e terceirizados), de acordo com os
+          seguintes prazos e volumes:</p>
+        <ul>
+          <li>Discentes: 3 livros/15 dias corridos;</li>
+          <li>Servidores (professores e técnicos) e terceirizados: 5 livros/22 dias consecutivos.</li>
+        </ul>
+        <p>Obs.: Quando o exemplar não estiver disponível, o(a) solicitante poderá fazer uma reserva virtualmente. Não
+          serão emprestados mapas, dicionários, enciclopédias, periódicos (jornais, revistas e similares) e obras raras.
+        </p>
+      </div>
+      <div>
+        <img src="img/livros.jpg" alt="">
+      </div>
+      <div>
+        <img src="img/prateleira-livros.jpg" alt="">
+      </div>
+      <div>
+        <h3>Reserva:</h3>
+        <p>Realizada virtualmente, ou pessoalmente no setor, com validade de 24h.</p>
+        <h3>Renovação</h3>
+        <p>Realizada virtualmente, ou pessoalmente no setor, por até cinco (5) vezes, desde que o(a) solicitante não
+          esteja em atraso nem o material reservado.</p>
+        <h3>Devolução</h3>
+        <p>O exemplar retirado para empréstimo deverá ser entregue diretamente na Biblioteca, mediante assinatura do
+          recibo de devolução. Portanto, os exemplares deixados nas mesas do setor não serão considerados como
+          devolvidos.</p>
+        <h3>Penalidades</h3>
+        <p>O não cumprimento das formalidades e dos prazos implicará no impedimento de novo empréstimo pelo mesmo número
+          de dias de atraso, salvo quando a Biblioteca estiver fechada. Em caso de perda ou danos à obra emprestada,
+          deverá ser feita a reposição de volume idêntico. No caso de títulos esgotados, a reposição será de obra com
+          assunto e valor equivalentes, a partir de indicação do setor.</p>
+          <p>Obs.: A inadimplência com a Biblioteca impedirá o(a) estudante de efetuar nova matrícula.</p>
+      </div>
+      <div>
+        <p><strong>Atendimento: </strong>das 7h às 16h de segunda a quinta-feira; teletrabalho às sextas-feiras.</p>
+        <p><strong>Horário de Funcionamento do setor:</strong>das 7h às 22h de segunda a quinta-feira, e das 8h às 17h na sexta-feira</p>
+        <p><strong>Ramal:</strong>8710</p>
+        <p><strong>E-mail: </strong>biblioteca.jac@ifba.edu.br</p>
+      </div>
+    </section>
+
+    <section id="ti" class="escondido">
+      <h1>Entrar em contato</h1>
+      <br />
+      <div id="ex1" class="modal">
+        <form>
+          <fieldset>
+            <label>Nome</label>
+            <input type="text" />
+            <br />
+            <label>Email</label>
+            <input type="email" />
+            <br />
+            <input type="submit" />
+          </fieldset>
+        </form>
+        <a href="#" rel="modal:close">Close</a>
+      </div>
+
+      <!-- Link to open the modal -->
+      <p><a href="#ex1" rel="modal:open">Clique para entrar em contato</a></p>
+    </section>
+  </main>
+
+  <div>
+    <footer>
+      <div id="logo-if-jacobina">
+        <picture>
+          <source srcset="img/Logo_jacobina.avif" type="image/avif" />
+          <img src="img/Logo_jacobina.webp" />
+        </picture>
+        <br />
+        <a href="https://twitter.com/ifbaoficial">
+          <i class="fa-brands fa-twitter"> </i>
+        </a>
+        <a href="https://www.facebook.com/InstitutoFederaldaBahia">
+          <i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/ifbaoficial/">
+          <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCyCPdBXqatYjrOhqY0k3sMQ">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+      <div>
+        <h1>Institucional</h1>
+        <ul>
+          <li><a href="">O Instituto</a></li>
+          <li><a href="">Memória </a></li>
+          <li><a href="">Organograma</a></li>
+          <li><a href="">Quem é quem</a></li>
+          <li><a href="">Atribuições e cargos</a></li>
+          <li><a href="">Eleições</a></li>
+          <li><a href="">Processos seletivos</a></li>
+          <li><a href="">Assessoria internacional</a></li>
+          <li><a href="">Contatos</a></li>
+          <li><a href="">Fale conosco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Ensino</h1>
+        <ul>
+          <li><a> Seja nosso aluno</a></li>
+          <li><a> Tipos de cursos</a></li>
+          <li><a> Nossos cursos</a></li>
+          <li><a> Ensino a distância</a></li>
+          <li><a> Assistência estudantil</a></li>
+          <li><a> Processo Seletivo 2024</a></li>
+          <li><a> Certificação ENCCEJA/ENEM</a></li>
+          <li><a> SISU</a></li>
+          <li><a> Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+    </footer>
+    <nav class="col-2">
+      <a href="https://gov.br">
+        <picture>
+          <source srcset="img/governo-federal-brasil.avif" type="image/avif" />
+          <img src="img/governo-federal-brasil.webp" alt="Logo do Governo Federal" />
+        </picture>
+      </a>
+
+      <a href="http://www.gov.br/acessoainformacao/">
+        <picture id="fnav-direita">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 49" height="150" shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision">
+            <defs>
+              <style type="text/css">
+                .a {
+                  font:
+                    normal bold 11px Open Sans,
+                    sans-serif;
+                }
+              </style>
+            </defs>
+            <circle cx="22" cy="23" r="22" fill="#fff"></circle>
+            <!-- tailwind blue 950 -->
+            <path style="stroke: #172554; stroke-width: 9; stroke-linecap: round" d="m 22,23 v 13"></path>
+            <path style="stroke: #fff; stroke-width: 4; stroke-linejoin: round" d="m 4,43 3,-6 4,3 z"></path>
+            <circle r="4.5" cy="11" cx="22" fill="#172554"></circle>
+            <g fill="#fff">
+              <text x="47" y="22">
+                <tspan class="a" y="18">Acesso à</tspan>
+                <tspan class="a" x="47" y="31">Informação</tspan>
+              </text>
+            </g>
+          </svg>
+        </picture>
+      </a>
+    </nav>
+  </div>
+
   <script>
-    new window.VLibras.Widget("https://vlibras.gov.br/app");
+    // Redirecionar suave dos links
+    var $root = $("html, body");
+
+    $('a[href^="#"]').click(function () {
+      $root.animate(
+        {
+          scrollTop: $($.attr(this, "href")).offset().top,
+        },
+        500,
+      );
+
+      return false;
+    });
   </script>
-  <!--   Jquerry -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <!--   Fontawesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <!--   biblioteca Jquerrymodal -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+</body>
+<!--   Plugin Vlibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<!--   Linkando scripts no fim da página-->
+<script src="scroll.js"></script>
+
+<!-- Vlibras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget("https://vlibras.gov.br/app");
+</script>
+<!--   Jquerry -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--   Fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--   biblioteca Jquerrymodal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
 </html>
