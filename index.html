@@ -206,13 +206,14 @@
     <section id="ti" class="escondido">
       <h1>Entrar em contato</h1>
       <br />
+      <!-- Modal do formulário -->
       <div id="modal-form" class="modal">
-        <form>
+        <form id="form" action='javascript:enviar()'>
           <fieldset class="col-2">
             <label>Nome</label>
-            <input type="text" />
+            <input required type="text" />
             <label>Email</label>
-            <input type="email" />
+            <input required type="email" />
             <label>Categoria</label>
             <select name="categoria" id="">
               <option value="estudante">Estudante</option>
@@ -220,13 +221,23 @@
               <option value="tae">Técnico administrativo escolar</option>
               <option value="externo">Público externo</option>
             </select>
-            <input type="submit" value="Enviar" onclick="mensagemenviada()" />
+            <label>Mensagem</label>
+            <textarea name="msg" id="" rows="10" cols="20"></textarea>
+            <input type="submit" value="Enviar"/>
         </form>
-        <a href="#" rel="modal:close">Close</a>
       </div>
-
-      <!-- Link to open the modal -->
+      <script>
+        function enviar(){
+          $('#modal-confirm').modal();
+        }
+      </script>
+      <!-- Link para formulário -->
       <a href="#modal-form" class="a-btn" rel="modal:open">Clique para entrar em contato</a>
+
+      <div id="modal-confirm" class="modal">
+        <h1 style="color: #059669;">Parabéns! Seu formulário foi enviado!</h1>
+        <a href="#" rel="modal:close"></a>
+      </div>
     </section>
   </main>
 

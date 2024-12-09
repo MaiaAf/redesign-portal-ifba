@@ -145,6 +145,7 @@ nav {
 /* Fim do cabeçalho */
 
 /* Inputs */
+textarea,
 select,
 input {
   border-radius: 0.375rem;
@@ -158,6 +159,15 @@ input {
     /* cyan-400 */
     outline: 2px solid #22d3ee;
   }
+}
+
+input:required {
+  /* red-500 */
+  border-color: #ef4444;
+}
+
+textarea {
+  resize: none;
 }
 
 label {
