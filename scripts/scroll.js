@@ -1,7 +1,7 @@
 // Redirecionar suave dos links
 const $root = $("html, body");
 
-$('a[href^="#"], #btnsubir').click(function () {
+$('a[name="suave"], #subir').click(function () {
   $root.animate(
     {
       scrollTop: $($.attr(this, "href")).offset().top,
