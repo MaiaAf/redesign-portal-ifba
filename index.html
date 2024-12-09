@@ -7,6 +7,12 @@
     <meta name="description" content="Portal do IFBA JAcobina redesenhado" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Portal IFBA Jacobina</title>
+    <!--   Css do Jquerrymodal -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <!--   Css principal -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="scroll.css" />
   </head>
@@ -55,6 +61,28 @@
       </section>
       <section id="biblioteca" class="escondido">
         <h1>Seção da biblioteca</h1>
+      </section>
+
+      <section id="ti" class="escondido">
+        <h1>Entrar em contato</h1>
+        <br />
+        <div id="ex1" class="modal">
+          <form>
+            <fieldset>
+              <label>Nome</label>
+              <input type="text" />
+              <br />
+              <label>Email</label>
+              <input type="email" />
+              <br />
+              <input type="submit" />
+            </fieldset>
+          </form>
+          <a href="#" rel="modal:close">Close</a>
+        </div>
+
+        <!-- Link to open the modal -->
+        <p><a href="#ex1" rel="modal:open">Clique para entrar em contato</a></p>
       </section>
     </main>
 
@@ -143,7 +171,6 @@
               </defs>
               <circle cx="22" cy="23" r="22" fill="#fff"></circle>
               <!-- tailwind blue 950 -->
-              -->
               <path
                 style="stroke: #172554; stroke-width: 9; stroke-linecap: round"
                 d="m 22,23 v 13"
@@ -211,4 +238,6 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <!--   biblioteca Jquerrymodal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </html>
