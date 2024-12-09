@@ -1,7 +1,7 @@
 // Redirecionar suave dos links
 const $root = $("html, body");
 
-$('a[href^="#"]').click(function () {
+$('a[href^="#"], #btnsubir').click(function () {
   $root.animate(
     {
       scrollTop: $($.attr(this, "href")).offset().top,
@@ -18,20 +18,14 @@ $(document).ready(function() {
   const btnsubir = $('#subir')
   btnsubir.fadeOut(0)
 
-  var offset = 200;
   $(window).scroll(function() {
-      if ($(this).scrollTop() > offset) {
+      if ($(this).scrollTop() > 200) {
           btnsubir.fadeIn(500);
       } else {
           btnsubir.fadeOut(500);
       }
   });
 
-  btnsubir.click(function(event) {
-      event.preventDefault();
-      $root.animate({scrollTop: 0}, 500);
-      return false;
-  })
 });
 
 
