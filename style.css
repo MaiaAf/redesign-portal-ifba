@@ -70,12 +70,18 @@ a i {
     transition-duration: 300ms;
   }
 }
+.col-2-r,
 .col-2 {
   /* grid grid-cols-2 */
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.col-2-r{
+  grid-template-columns: 1fr 2fr;
 }
 /* Cabeçalho */
 .header {
@@ -160,6 +166,7 @@ h1 {
 section {
   min-height: 100dvh;
   margin: 0;
+  overflow: hidden;
   /* display: flex;
   flex-wrap: wrap; */
 }
@@ -243,12 +250,11 @@ footer ul li {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .col-2 {
-    grid-template-columns: 1fr;
-    display: flex;
+  .sm-col-2 {
+    display: inherit;
   }
 
-  section {
-    padding: 1rem;
+  section{
+    min-height: auto;
   }
 }
