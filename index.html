@@ -208,15 +208,19 @@
       <br />
       <div id="ex1" class="modal">
         <form>
-          <fieldset>
+          <fieldset class="col-2">
             <label>Nome</label>
             <input type="text" />
-            <br />
             <label>Email</label>
             <input type="email" />
-            <br />
-            <input type="submit" />
-          </fieldset>
+            <label>Categoria</label>
+            <select name="categoria" id="">
+              <option value="estudante">Estudante</option>
+              <option value="professor">Professor</option>
+              <option value="tae">Técnico administrativo escolar</option>
+              <option value="externo">Público externo</option>
+            </select>
+            <input type="submit" value="Enviar" onclick="mensagemenviada()" />
         </form>
         <a href="#" rel="modal:close">Close</a>
       </div>
