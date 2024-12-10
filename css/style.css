@@ -262,6 +262,29 @@ footer ul li {
   }
 }
 /* Media queries */
+
+@media (max-width: 1024px) {
+  section {
+    min-height: auto;
+  }
+
+  .cite {
+    padding: 1rem;
+  }
+
+  p {
+    padding: 1rem;
+    text-indent: 1rem;
+  }
+
+  #inicio,
+  #biblioteca,
+  #campus,
+  #ti {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   #logo {
     display: flex;
@@ -294,28 +317,6 @@ footer ul li {
   #campus,
   #ti {
     padding: 0.5rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  section {
-    min-height: auto;
-  }
-
-  .cite {
-    padding: 1rem;
-  }
-
-  p {
-    padding: 1rem;
-    text-indent: 1rem;
-  }
-
-  #inicio,
-  #biblioteca,
-  #campus,
-  #ti {
-    padding: 1rem;
   }
 }
 
