@@ -43,6 +43,16 @@ a {
   color: white;
 }
 
+.link-ti{
+  padding: 0.5rem;
+  text-decoration: none;
+  color: blue;
+}
+
+.link-ti:hover{
+  color: black
+}
+
 .a-btn {
   background-color: #064e3b;
   border-radius: 3rem;
