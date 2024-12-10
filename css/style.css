@@ -194,10 +194,7 @@ h1 {
 }
 
 section {
-  min-height: 100dvh;
   overflow: hidden;
-  /* display: flex;
-  flex-wrap: wrap; */
 }
 
 #inicio,
@@ -206,6 +203,7 @@ section {
 #ti {
   padding: 0.25rem 3rem;
   color: black;
+  min-height: 100dvh;
 }
 
 /* img  */
@@ -264,10 +262,6 @@ footer ul li {
 /* Media queries */
 
 @media (max-width: 1024px) {
-  section {
-    min-height: auto;
-  }
-
   .cite {
     padding: 1rem;
   }
@@ -282,6 +276,7 @@ footer ul li {
   #campus,
   #ti {
     padding: 1rem;
+    min-height: auto;
   }
 }
 
