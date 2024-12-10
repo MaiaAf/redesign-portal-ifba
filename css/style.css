@@ -188,7 +188,10 @@ label {
 
 /* Headings */
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
 }
