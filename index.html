@@ -58,6 +58,42 @@
           <p>a mais linda terra entre as formosas,</p>
           <p>na encosta da Chapada Diamantina..."</p>
           <span>Trecho do Hino à Jacobina - Doracy Lemos</span>
+        <div id="swiper-inicial">
+          <div class="swiper-wrapper">
+            <!-- Foto 1  do carrosel-->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="img/inicial/banner-portal.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="img/inicial/banner-portal.webp"
+                  alt="Confira o RESULTADO FINAL e acompanhe as próximas etapas aqui"
+                />
+              </picture>
+            </div>
+            <!-- Foto 2 -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="img/inicial/Bannerprocessoseletivo.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="img/inicial/Bannerprocessoseletivo.webp"
+                  alt="Banner IFBA PROCESSO SELETIVO 2025"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-plugin-pagination"></div>
+          <button class="anterior">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="proximo">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
       <div class="col-2 sm-col-2">
@@ -274,45 +310,62 @@
         <div class="swiper-wrapper">
 
           <!-- Foto 1  do carrosel-->
+        <!-- Tiny-Swiper -->
+        <div id="swiper-biblioteca">
+          <div class="swiper-wrapper">
+            <!-- Foto 1  do carrosel-->
             <div class="swiper-slide">
-                <picture>
-                    <source scrset="img/biblioteca-carrosel/entrada.avif" type="image/avif">
-                    <img src="img/biblioteca-carrosel/entrada.webp" alt="">
-                </picture>
+              <picture>
+                <source
+                  srcset="img/biblioteca-carrosel/entrada.avif"
+                  type="image/avif"
+                />
+                <img src="img/biblioteca-carrosel/entrada.webp" alt="" />
+              </picture>
             </div>
             <!-- Foto 2 -->
             <div class="swiper-slide">
-                <picture>
-                    <source scrset="img/biblioteca-carrosel/dentro.avif" type="image/avif">
-                    <img src="img/biblioteca-carrosel/dentro.webp" alt="">
-                </picture>
+              <picture>
+                <source
+                  srcset="img/biblioteca-carrosel/dentro.avif"
+                  type="image/avif"
+                />
+                <img src="img/biblioteca-carrosel/dentro.webp" alt="" />
+              </picture>
             </div>
 
             <!-- Foto 3 -->
             <div class="swiper-slide">
-                <picture>
-                    <source scrset="img/biblioteca-carrosel/prateleira.avif" type="image/avif">
-                    <img src="img/biblioteca-carrosel/prateleira.webp" alt="">
-                </picture>
+              <picture>
+                <source
+                  srcset="img/biblioteca-carrosel/prateleira.avif"
+                  type="image/avif"
+                />
+                <img src="img/biblioteca-carrosel/prateleira.webp" alt="" />
+              </picture>
             </div>
 
             <!-- Foto 4 -->
 
             <div class="swiper-slide">
-                <picture>
-                    <source scrset="img/biblioteca-carrosel/pcs.avif" type="image/avif">
-                    <img src="img/biblioteca-carrosel/dentro.webp" alt="">
-                </picture>
+              <picture>
+                <source
+                  srcset="img/biblioteca-carrosel/pcs.avif"
+                  type="image/avif"
+                />
+                <img src="img/biblioteca-carrosel/dentro.webp" alt="" />
+              </picture>
             </div>
-
           </div>
-            <button class="anterior">
+          <button class="anterior">
             <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button class="proximo">
+          </button>
+          <button class="proximo">
             <i class="fa-solid fa-arrow-right"></i>
-            </button>
+          </button>
+          <div class="swiper-plugin-pagination"></div>
         </div>
+      </section>
 
     </section>
 
@@ -336,6 +389,7 @@
             </select>
             <label>Mensagem</label>
             <textarea name="msg" id="" rows="10" cols="20"></textarea>
+            </fieldset>
             <input type="submit" value="Enviar" />
         </form>
       </div>
@@ -471,13 +525,15 @@
 <!--   biblioteca Jquerrymodal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
-<!-- Tiny-Swiper JS -->
-<script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
-<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
 
 <link rel="stylesheet" href="css/carrosel.css">
 <!-- Scripts locais -->
 <script src="scripts/scroll.js"></script>
 <script src="scripts/carrosel.js"></script>
+  <!-- Tiny-Swiper JS -->
+  <link rel="stylesheet" href="css/carrosel.css" />
+  <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+  <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
+  <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
 
 </html>
