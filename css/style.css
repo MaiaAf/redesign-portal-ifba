@@ -241,8 +241,12 @@ section {
   margin: 1rem;
   width: 100%;
   transition: all 400ms;
+  box-shadow: 2px 2px 2px 1px #666;
 
+  
   img {
+  display: flex;
+  justify-content: center;
     object-fit: cover;
     max-width: 100%;
     overflow: hidden;
