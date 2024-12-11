@@ -43,14 +43,14 @@ a {
   color: white;
 }
 
-.link-ti{
+.link-ti {
   padding: 0.5rem;
   text-decoration: none;
   color: blue;
 }
 
-.link-ti:hover{
-  color: black
+.link-ti:hover {
+  color: black;
 }
 
 .a-btn {
@@ -318,6 +318,6 @@ footer ul li {
   }
 }
 
-.destaque-ti{
+.destaque-ti {
   background-color: #d2d0d0;
 }
