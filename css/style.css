@@ -199,7 +199,7 @@ h4 {
 section {
   overflow: hidden;
 }
-
+#inicial,
 #inicio,
 #biblioteca,
 #campus,
@@ -209,6 +209,53 @@ section {
   min-height: 100dvh;
 }
 
+/* Card */
+
+.card-container {
+  display: grid;
+  column-gap: 3rem;
+  /* row-gap: 3rem; */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: fit-content;
+  max-width: 100%;
+
+
+  h1 {
+    font-size: large;
+    color: #064e3b;
+  }
+
+  p{
+    padding: 0;
+  }
+
+  a{
+    color: inherit;
+  }
+
+}
+
+.card {
+  background-color: #d2d0d0;
+  border-radius: 5px;
+  margin: 1rem;
+  width: 100%;
+  transition: all 400ms;
+
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  &:hover {
+    scale: 102%;
+    background-color: #eee;
+  }
+}
+.card-um {
+  max-width: fit-content;
+}
 /* img  */
 img {
   max-width: 100%;
@@ -300,16 +347,20 @@ footer ul li {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .card-container,
   .sm-col-2 {
     display: inherit;
   }
 
   div,
   p {
+    margin: 0;
     padding: 0;
-    text-indent: 1rem;
   }
 
+  p {
+    text-indent: 1rem;
+  }
   #inicio,
   #biblioteca,
   #campus,
