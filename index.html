@@ -1,63 +1,63 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Portal, IFBA, Jacobina" />
+    <meta name="description" content="Portal do IFBA JAcobina redesenhado" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Portal IFBA Jacobina</title>
+    <!--   Css do Jquerrymodal -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <!--   Css principal -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/scroll.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Portal, IFBA, Jacobina" />
-  <meta name="description" content="Portal do IFBA JAcobina redesenhado" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <title>Portal IFBA Jacobina</title>
-  <!--   Css do Jquerrymodal -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-  <!--   Css principal -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/scroll.css" />
-</head>
+  <body>
+    <div id="header">
+      <header>
+        <div>
+          <a href="index.html" id="logo">
+            <img
+              id="logoimg"
+              src="img/MARCA_IFBA_VERTICAL_negativaBRANCA_IFBA.png"
+            />
 
-<body>
-  <div id="header">
-    <header>
-      <div>
-        <a href="index.html" id="logo">
-          <img id="logoimg" src="img/MARCA_IFBA_VERTICAL_negativaBRANCA_IFBA.png" />
+            <h1>Instituto Federal da Bahia</h1>
+          </a>
+        </div>
+        <div id="pesquisa">
+          <input type="text" name="" id="" placeholder="Buscar" />
+        </div>
+      </header>
+      <nav>
+        <a href="#biblioteca" name="suave">Biblioteca</a>
+        <a href="#ti" name="suave">Tecnologia da informação</a>
+        <a href="#campus" name="suave">Campus</a>
+        <a href="#inicio" name="suave">Início</a>
+      </nav>
+    </div>
+    <main>
+      <section id="inicio" class="col-2-r sm-col-2">
+        <div class="escondido slide-l nomargin">
+          <h1>Sabia que você pode estudar conosco?</h1>
+          <span>IFBA: Ensino gratuito e de qualidade </span>
+        </div>
+        <div class="escondido delay-2 slide-r borrado nomargin">
+          <picture>
+            <source srcset="img/campusjacobina_A.avif" type="image/avif" />
+            <img src="img/campusjacobina_A.webp" alt="" />
+          </picture>
+        </div>
+      </section>
+      <section id="inicial">
+        <h1>Página inicial</h1>
 
-          <h1>Instituto Federal da Bahia</h1>
-        </a>
-      </div>
-      <div id="pesquisa">
-        <input type="text" name="" id="" placeholder="Buscar" />
-      </div>
-    </header>
-    <nav>
-      <a href="#biblioteca" name="suave">Biblioteca</a>
-      <a href="#ti" name="suave">Tecnologia da informação</a>
-      <a href="#campus" name="suave">Campus</a>
-      <a href="#inicio" name="suave">Início</a>
-    </nav>
-  </div>
-  <main>
-    <section id="inicio" class="col-2-r sm-col-2">
-      <div class="escondido slide-l nomargin">
-        <h1>Sabia que você pode estudar conosco?</h1>
-        <span>IFBA: Ensino gratuito e de qualidade </span>
-      </div>
-      <div class="escondido delay-2 slide-r borrado nomargin">
-        <picture>
-          <source srcset="img/campusjacobina_A.avif" type="image/avif">
-          <img src="img/campusjacobina_A.webp" alt="">
-        </picture>
-      </div>
-    </section>
-    <section id="campus" class="escondido">
-      <h1>O Campus</h1>
-      <div class="center">
-        <div class="cite escondido slide-l">
-          <p>"Rodeada de serras majestosas,</p>
-          <p>dos Payayá herdamos Jacobina,</p>
-          <p>a mais linda terra entre as formosas,</p>
-          <p>na encosta da Chapada Diamantina..."</p>
-          <span>Trecho do Hino à Jacobina - Doracy Lemos</span>
+        <!-- Tiny-Swiper -->
         <div id="swiper-inicial">
           <div class="swiper-wrapper">
             <!-- Foto 1  do carrosel-->
@@ -95,221 +95,418 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-      </div>
-      <div class="col-2 sm-col-2">
-        <picture>
-          <source srcset="img/fachada-lateral.avif">
-          <img src="img/fachada-lateral.webp" alt="Fachada lateral do Ifba Jacobina">
-        </picture>
-        <div>
+        <!-- Fim do carrosel -->
+      </section>
+
+      <section id="campus" class="escondido">
+        <h1>O Campus</h1>
+        <div class="center">
+          <div class="cite escondido slide-l">
+            <p>"Rodeada de serras majestosas,</p>
+            <p>dos Payayá herdamos Jacobina,</p>
+            <p>a mais linda terra entre as formosas,</p>
+            <p>na encosta da Chapada Diamantina..."</p>
+            <span>Trecho do Hino à Jacobina - Doracy Lemos</span>
+          </div>
+        </div>
+        <div class="col-2 sm-col-2">
+          <picture>
+            <source srcset="img/fachada-lateral.avif" />
+            <img
+              src="img/fachada-lateral.webp"
+              alt="Fachada lateral do Ifba Jacobina"
+            />
+          </picture>
+          <div>
+            <p>
+              Situada no estado da Bahia, extremo norte da Chapada Diamantina, a
+              cerca de 330 km de Salvador, a cidade de Jacobina tem mais de 80
+              mil habitantes. Rodeado por serras, lagoas, grutas, rios e
+              cachoeiras, o município se destaca pelo potencial ambiental, com
+              diversos atrativos voltados ao ecoturismo, bem como cultural,
+              sendo palco de manifestações tradicionais e artísticas singulares.
+              Com uma história diretamente ligada à atividade mineradora,
+              Jacobina é também conhecida como a Cidade do Ouro.
+            </p>
+            <p>
+              É nesse lugar diferenciado que nasce o nosso campus. Fruto da
+              segunda fase da expansão da Rede Federal de Educação Profissional,
+              Científica e Tecnológica, o Campus Jacobina do IFBA foi inaugurado
+              simbolicamente em Brasília, no ano de 2010, começando seu
+              funcionamento em 2011.
+            </p>
+          </div>
           <p>
-            Situada no estado da Bahia, extremo norte da Chapada Diamantina, a cerca de 330 km de Salvador, a cidade de
-            Jacobina tem mais de 80 mil habitantes. Rodeado por serras, lagoas, grutas, rios e cachoeiras, o município
-            se
-            destaca pelo potencial ambiental, com diversos atrativos voltados ao ecoturismo, bem como cultural, sendo
-            palco de manifestações tradicionais e artísticas singulares. Com uma história diretamente ligada à atividade
-            mineradora, Jacobina é também conhecida como a Cidade do Ouro.
-          </p>
-          <p>
-            É nesse lugar diferenciado que nasce o nosso campus. Fruto da segunda fase da expansão da Rede Federal de
-            Educação Profissional, Científica e Tecnológica, o Campus Jacobina do IFBA foi inaugurado simbolicamente em
-            Brasília, no ano de 2010, começando seu funcionamento em 2011.
+            Atualmente, oferece os cursos técnicos integrados e subsequentes ao
+            ensino médio de informática, eletromecânica e mineração, além da
+            formação de meio ambiente, disponível na forma subsequente. Ainda
+            dispõe da licenciatura em computação, seu primeiro curso de nível
+            superior. Nosso campus também já ofertou cursos profissionalizantes
+            de curta duração, bem como semipresenciais de nível técnico, com
+            destaque para as formações em guia de turismo e informática.
           </p>
         </div>
-        <p>
-          Atualmente, oferece os cursos técnicos integrados e subsequentes ao ensino médio de informática,
-          eletromecânica e mineração, além da formação de meio ambiente, disponível na forma subsequente. Ainda dispõe
-          da licenciatura em computação, seu primeiro curso de nível superior. Nosso campus também já ofertou cursos
-          profissionalizantes de curta duração, bem como semipresenciais de nível técnico, com destaque para as
-          formações em guia de turismo e informática. </p>
-      </div>
-      <section>
-        <h2>O IFBA</h2>
-        <p>
-          O Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA), criado pela Lei nº 11.892/2008, é
-          resultado das mudanças promovidas no antigo Centro Federal de Educação Tecnológica da Bahia (Cefet-BA).
-          Autarquia do Governo Federal, a instituição existe há mais de 100 anos, estabelecendo-se, em 1910, na capital
-          baiana, como a primeira Escola de Aprendizes Artífices do país.
-        <p>
-          Ao longo de sua trajetória, recebeu distintas denominações, como Liceu Industrial de Salvador, em 1937; Escola
-          Técnica de Salvador (ETS), em 1942; Escola Técnica Federal da Bahia (ETFBA), em 1965; Centro Federal de
-          Educação Tecnológica da Bahia (Cefet/BA), resultado da fusão entre o Centro de Educação Tecnológica da Bahia
-          (Centec) e a ETFBA, em 1993, até chegar ao atual IFBA, em 2008.
-        </p>
-        <p>
-          Com a última transformação, o Instituto passa a ter características bem peculiares: equipara-se às
-          universidades federais, atuando com a verticalização do ensino, da educação básica e profissional à superior,
-          além de apresentar estrutura pluricurricular e multicampi. Hoje o IFBA está em mais de 20 cidades da Bahia,
-          dentre elas, Jacobina.
-        </p>
-        <p>Conheça mais sobre a história dessa instituição centenária neste vídeo e no Portal IFBA.</p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VnwRwEoSt-c?si=CDaRb0D2ly1ru2lN"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section>
+          <h2>O IFBA</h2>
+          <p>
+            O Instituto Federal de Educação, Ciência e Tecnologia da Bahia
+            (IFBA), criado pela Lei nº 11.892/2008, é resultado das mudanças
+            promovidas no antigo Centro Federal de Educação Tecnológica da Bahia
+            (Cefet-BA). Autarquia do Governo Federal, a instituição existe há
+            mais de 100 anos, estabelecendo-se, em 1910, na capital baiana, como
+            a primeira Escola de Aprendizes Artífices do país.
+          </p>
+
+          <p>
+            Ao longo de sua trajetória, recebeu distintas denominações, como
+            Liceu Industrial de Salvador, em 1937; Escola Técnica de Salvador
+            (ETS), em 1942; Escola Técnica Federal da Bahia (ETFBA), em 1965;
+            Centro Federal de Educação Tecnológica da Bahia (Cefet/BA),
+            resultado da fusão entre o Centro de Educação Tecnológica da Bahia
+            (Centec) e a ETFBA, em 1993, até chegar ao atual IFBA, em 2008.
+          </p>
+          <p>
+            Com a última transformação, o Instituto passa a ter características
+            bem peculiares: equipara-se às universidades federais, atuando com a
+            verticalização do ensino, da educação básica e profissional à
+            superior, além de apresentar estrutura pluricurricular e multicampi.
+            Hoje o IFBA está em mais de 20 cidades da Bahia, dentre elas,
+            Jacobina.
+          </p>
+          <p>
+            Conheça mais sobre a história dessa instituição centenária neste
+            vídeo e no Portal IFBA.
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VnwRwEoSt-c?si=CDaRb0D2ly1ru2lN"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
       </section>
-    </section>
-    <section id="ti" class="escondido">
-      <h1>Tecnologia da Informação</h1>
-      <h3>Gerência de Gestão da Tecnologia da Informação</h3>
-      <p><strong>Regulamentação: </strong>Aguardando Regimento Interno</p>
-      <div class="destaque-ti">
-        <strong>Equipe de Trabalho/Servidores:</strong>
-      </div>
-      <p>Chefia: Helder Alves Oliveira (técnico em informática) - <a class="link-ti"
-          href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/PortariaHelder.pdf">Portaria de
-          Nomeação</a></p>
-      <p>Horário de Atendimento: seg a sex das 7h às 12h e das 14h às 17h.</p>
-      <ul>
-        <li>Thiago Gomes Pereira* I Philip Ramon de Araújo Santos I Fábio Costa Cândido - Técnicos em Tecnologia da
-          Informação - Horário de Atendimento: seg a sex das 8h às 12h e das 13h às 17h</li><br>
-        <li>Ivo Chaves de França* I Analista de Tecnologia da Informação </li>
-      </ul>
-      <p>Ramais: 8707 I 8733 I 8703 * E-mails: helder.alves@ifba.edu.br I thiago.pereira@ifba.edu.br I
-        fabio.costa@ifba.edu.br philip.santos@ifba.edu.br I ivochaves@ifba.edu.br I I cgti.jacobina@ifba.edu.br </p>
-      <table border="1">
-        <tr>
-          <td>Servidor(a)</td>
-          <td>Regime de Trabalho</td>
-          <td>Cargo</td>
-          <td>Ramal</td>
-          <td>E-mail</td>
-          <td>Atendimento</td>
-        </tr>
-        <tr>
-          <td>Ivo Chaves de França</td>
-          <td>Parcial</td>
-          <td>Analista de TI</td>
-          <td>8703</td>
-          <td>cgti.jacobina@ifba.edu.br
-            ou na Central de Chamados no SUAP</td>
-          <td>Presencial: segundas-feiras das 7h às 12h20 e das 13h20 às 16h;
-            Teletrabalho: terças a sextas</td>
-        </tr>
-        <tr>
-          <td>Thiago Gomes Pereira</td>
-          <td>Parcial</td>
-          <td>Técnico em TI (Gerente)</td>
-          <td>8733
-            (WhatsApp)</td>
-          <td>cgti.jacobina@ifba.edu.br
-            ou na Central de Chamados no SUAP</td>
-          <td>Presencial: quintas as sextas-feiras, das 7h30 às 13h e das 14h às 16h30;
-            Teletrabalho: segundas as quartas-feiras.</td>
-        </tr>
-      </table><br>
-      <div class="destaque-ti">
-        <strong>Serviços Oferecidos</strong>
-      </div>
-      <ul>
-        <li>Manter a infraestrutura física e lógica da rede local do campus;</li><br>
-        <li>Instalar, configurar, administrar e manter os equipamentos de rede e computadores-servidores que compõem o
-          backbone da rede local;</li><br>
-        <li>Realizar suporte em nível básico aos usuários para os Sistemas de Informação em uso no campus;</li><br>
-        <li>Manter contas de usuários do campus;</li><br>
-        <li>Realizar backups dos computadores de servidores do campus;</li><br>
-        <li>Gerenciar licenças de software;</li><br>
-        <li>Aplicaras políticas de segurança necessárias à manutenção e disponibilidade de dados e serviços do campus;
-        </li><br>
-        <li>Manter serviço de Telefonia IP;</li><br>
-        <li>Dar suporte à contratação de bens e serviços de Tecnologia da Informação;</li><br>
-        <li>Desenvolver, implantar e manter Sistemas de Informação.</li><br>
-      </ul>
-      <div class="destaque-ti">
-        <strong>Documentos Relacionados</strong>
-      </div>
-      <ul>
-        <li><a class="link-ti"
-            href="https://portal.ifba.edu.br/dgti/documentos/termos-de-responsabilidade">Termos de Responsabilidade</a>
-        </li><br>
-        <li>Manuais de apoio técnico: <a class="link-ti"
-            href="https://portal.ifba.edu.br/dgti/documentos/configuracoes">Configurações</a>
-          e <a class="link-ti" href="https://portal.ifba.edu.br/dgti/links-e-tutoriais/links-e-tutoriais">Links e tutoriais</a></li><br>
-        <li><a class="link-ti" href="https://portal.ifba.edu.br/dgti/documentos/plano-estrategico/normas-de-uso">Uso da Intranet</a></li><br>
-        <li><a class="link-ti" href="https://portal.ifba.edu.br/dgti/documentos/portarias">Portarias</a></li><br>
-        <li><a class="link-ti" href="https://portal.ifba.edu.br/dgti/documentos/resolucoes">Resoluções</a></li><br>
-        <li><a class="link-ti" href="https://portal.ifba.edu.br/dgti/documentos/plano-estrategico">Planos Estratégicos de TI/PDTI</a></li><br>
-        <li><a class="link-ti" href="https://portal.ifba.edu.br/dgti/documentos/plano-estrategico/psic">Política de Segurança da Informação</a></li>
-      </ul><br>
-      <div class="destaque-ti">
-        <strong>Tutoriais de apoio - GGTI Jacobina </strong>
-      </div>
-      <ul>
-        <li><a a class="link-ti" href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/TUTORIALCRIAODEEMAILINSTITUCIONALPELOSEI.pdf">Solicitação de criação de E-mail Institucional - Termo de responsabilidade via SEI</a></li><br>
-        <li><a class="link-ti" href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/TUTORIALUSURIOCRIAODEEMAILINSTITUCIONAL.pdf">Solicitação de criação de E-mail Institucional - Termo impresso</a></li><br>
-        <li><a class="link-ti" href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/TUTORIALCRIAOUSURIOEXTERNOPARAASSINATURASEI.pdf">Cadastro de Usuário Externo para assinatura de documentos no SEI</a></li><br>
-        <li><a class="link-ti" href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/TutorialCriaodegrficosparautilizaonosrelatriosdaCPA.pdf">Modelo de Criação de Gráficos pelo Google Planilhas para CPA</a></li>
-      </ul>
-    </section>
-    <section id="biblioteca" class="col-2 sm-col-2 escondido">
-      <div>
-        <h1>Biblioteca</h1>
-        <img src="img/entrada-biblioteca.jpg" alt="">
-      </div>
-      <div>
-        <p>É o espaço voltado para o armazenamento, a organização, disseminação e conservação do acervo bibliográfico do
-          campus, que reúne livros literários e técnicos, dicionários, periódicos, mapas, mídias (CDs e DVDs),
-          publicações
-          institucionais, como boletins informativos e revistas científicas, além dos TCCs dos alunos, somando mais de
-          mil
-          títulos e quase oito (8) mil exemplares. O setor ainda dispõe de computadores com acesso à internet para
-          pesquisas
-          acadêmicas e salas de estudo em grupo e individual.</p>
-        <p>Para usufruir do acervo, através de consulta ou empréstimo domiciliar, o(a) interessado(a) deve comparecer
-          pessoalmente, a fim de efetivar sua solicitação.</p>
-        <p>Lembrando que é necessário seguir as instruções dos avisos, sobretudo quanto ao silêncio e à proibição de
-          fazer refeições no recinto. Saiba mais <a class="link-ti"
-            href="https://portal.ifba.edu.br/jacobina/ensino/anexos/biblioteca_normas.pdf">aqui</a></p>
-      </div>
-
-      <div>
-        <h3>Empréstimo Domiciliar</h3>
-        <p>Autorizado após cadastro no Sistema Integrado de Bibliotecas, o Pergamum. Destina-se a toda a comunidade IFBA
-          (estudantes devidamente matriculados, professores, técnicos administrativos e terceirizados), de acordo com os
-          seguintes prazos e volumes:</p>
-        <ul>
-          <li>Discentes: 3 livros/15 dias corridos;</li>
-          <li>Servidores (professores e técnicos) e terceirizados: 5 livros/22 dias consecutivos.</li>
-        </ul>
-        <p>Obs.: Quando o exemplar não estiver disponível, o(a) solicitante poderá fazer uma reserva virtualmente. Não
-          serão emprestados mapas, dicionários, enciclopédias, periódicos (jornais, revistas e similares) e obras raras.
+      <section id="ti" class="escondido">
+        <h1>Tecnologia da Informação</h1>
+        <h3>Gerência de Gestão da Tecnologia da Informação</h3>
+        <p><strong>Regulamentação: </strong>Aguardando Regimento Interno</p>
+        <div class="destaque-ti">
+          <strong>Equipe de Trabalho/Servidores:</strong>
+        </div>
+        <p>
+          Chefia: Helder Alves Oliveira (técnico em informática) -
+          <a
+            class="link-ti"
+            href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/PortariaHelder.pdf"
+            >Portaria de Nomeação</a
+          >
         </p>
-      </div>
-      <div>
-        <img src="img/livros.jpg" alt="">
-      </div>
-      <div>
-        <img src="img/prateleira-livros.jpg" alt="">
-      </div>
-      <div>
-        <h3>Reserva:</h3>
-        <p>Realizada virtualmente, ou pessoalmente no setor, com validade de 24h.</p>
-        <h3>Renovação</h3>
-        <p>Realizada virtualmente, ou pessoalmente no setor, por até cinco (5) vezes, desde que o(a) solicitante não
-          esteja em atraso nem o material reservado.</p>
-        <h3>Devolução</h3>
-        <p>O exemplar retirado para empréstimo deverá ser entregue diretamente na Biblioteca, mediante assinatura do
-          recibo de devolução. Portanto, os exemplares deixados nas mesas do setor não serão considerados como
-          devolvidos.</p>
-        <h3>Penalidades</h3>
-        <p>O não cumprimento das formalidades e dos prazos implicará no impedimento de novo empréstimo pelo mesmo número
-          de dias de atraso, salvo quando a Biblioteca estiver fechada. Em caso de perda ou danos à obra emprestada,
-          deverá ser feita a reposição de volume idêntico. No caso de títulos esgotados, a reposição será de obra com
-          assunto e valor equivalentes, a partir de indicação do setor.</p>
-        <p>Obs.: A inadimplência com a Biblioteca impedirá o(a) estudante de efetuar nova matrícula.</p>
-      </div>
-      <div>
-        <p><strong>Atendimento: </strong>das 7h às 16h de segunda a quinta-feira; teletrabalho às sextas-feiras.</p>
-        <p><strong>Horário de Funcionamento do setor:</strong>das 7h às 22h de segunda a quinta-feira, e das 8h às 17h
-          na sexta-feira</p>
-        <p><strong>Ramal:</strong>8710</p>
-        <p><strong>E-mail: </strong>biblioteca.jac@ifba.edu.br</p>
-      </div>
-      <!-- Tiny-Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
+        <p>Horário de Atendimento: seg a sex das 7h às 12h e das 14h às 17h.</p>
+        <ul>
+          <li>
+            Thiago Gomes Pereira* I Philip Ramon de Araújo Santos I Fábio Costa
+            Cândido - Técnicos em Tecnologia da Informação - Horário de
+            Atendimento: seg a sex das 8h às 12h e das 13h às 17h
+          </li>
+          <br />
+          <li>Ivo Chaves de França* I Analista de Tecnologia da Informação</li>
+        </ul>
+        <p>
+          Ramais: 8707 I 8733 I 8703 * E-mails: helder.alves@ifba.edu.br I
+          thiago.pereira@ifba.edu.br I fabio.costa@ifba.edu.br
+          philip.santos@ifba.edu.br I ivochaves@ifba.edu.br I I
+          cgti.jacobina@ifba.edu.br
+        </p>
+        <table border="1">
+          <tr>
+            <td>Servidor(a)</td>
+            <td>Regime de Trabalho</td>
+            <td>Cargo</td>
+            <td>Ramal</td>
+            <td>E-mail</td>
+            <td>Atendimento</td>
+          </tr>
+          <tr>
+            <td>Ivo Chaves de França</td>
+            <td>Parcial</td>
+            <td>Analista de TI</td>
+            <td>8703</td>
+            <td>cgti.jacobina@ifba.edu.br ou na Central de Chamados no SUAP</td>
+            <td>
+              Presencial: segundas-feiras das 7h às 12h20 e das 13h20 às 16h;
+              Teletrabalho: terças a sextas
+            </td>
+          </tr>
+          <tr>
+            <td>Thiago Gomes Pereira</td>
+            <td>Parcial</td>
+            <td>Técnico em TI (Gerente)</td>
+            <td>8733 (WhatsApp)</td>
+            <td>cgti.jacobina@ifba.edu.br ou na Central de Chamados no SUAP</td>
+            <td>
+              Presencial: quintas as sextas-feiras, das 7h30 às 13h e das 14h às
+              16h30; Teletrabalho: segundas as quartas-feiras.
+            </td>
+          </tr>
+        </table>
+        <br />
+        <div class="destaque-ti">
+          <strong>Serviços Oferecidos</strong>
+        </div>
+        <ul>
+          <li>
+            Manter a infraestrutura física e lógica da rede local do campus;
+          </li>
+          <br />
+          <li>
+            Instalar, configurar, administrar e manter os equipamentos de rede e
+            computadores-servidores que compõem o backbone da rede local;
+          </li>
+          <br />
+          <li>
+            Realizar suporte em nível básico aos usuários para os Sistemas de
+            Informação em uso no campus;
+          </li>
+          <br />
+          <li>Manter contas de usuários do campus;</li>
+          <br />
+          <li>Realizar backups dos computadores de servidores do campus;</li>
+          <br />
+          <li>Gerenciar licenças de software;</li>
+          <br />
+          <li>
+            Aplicaras políticas de segurança necessárias à manutenção e
+            disponibilidade de dados e serviços do campus;
+          </li>
+          <br />
+          <li>Manter serviço de Telefonia IP;</li>
+          <br />
+          <li>
+            Dar suporte à contratação de bens e serviços de Tecnologia da
+            Informação;
+          </li>
+          <br />
+          <li>Desenvolver, implantar e manter Sistemas de Informação.</li>
+          <br />
+        </ul>
+        <div class="destaque-ti">
+          <strong>Documentos Relacionados</strong>
+        </div>
+        <ul>
+          <li>
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/dgti/documentos/termos-de-responsabilidade"
+              >Termos de Responsabilidade</a
+            >
+          </li>
+          <br />
+          <li>
+            Manuais de apoio técnico:
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/dgti/documentos/configuracoes"
+              >Configurações</a
+            >
+            e
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/dgti/links-e-tutoriais/links-e-tutoriais"
+              >Links e tutoriais</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/dgti/documentos/plano-estrategico/normas-de-uso"
+              >Uso da Intranet</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/dgti/documentos/portarias"
+              >Portarias</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/dgti/documentos/resolucoes"
+              >Resoluções</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/dgti/documentos/plano-estrategico"
+              >Planos Estratégicos de TI/PDTI</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/dgti/documentos/plano-estrategico/psic"
+              >Política de Segurança da Informação</a
+            >
+          </li>
+        </ul>
+        <br />
+        <div class="destaque-ti">
+          <strong>Tutoriais de apoio - GGTI Jacobina </strong>
+        </div>
+        <ul>
+          <li>
+            <a
+              a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/TUTORIALCRIAODEEMAILINSTITUCIONALPELOSEI.pdf"
+              >Solicitação de criação de E-mail Institucional - Termo de
+              responsabilidade via SEI</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/TUTORIALUSURIOCRIAODEEMAILINSTITUCIONAL.pdf"
+              >Solicitação de criação de E-mail Institucional - Termo
+              impresso</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/TUTORIALCRIAOUSURIOEXTERNOPARAASSINATURASEI.pdf"
+              >Cadastro de Usuário Externo para assinatura de documentos no
+              SEI</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/jacobina/institucional/documentos-arquivo/TutorialCriaodegrficosparautilizaonosrelatriosdaCPA.pdf"
+              >Modelo de Criação de Gráficos pelo Google Planilhas para CPA</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="biblioteca" class="col-2 sm-col-2 escondido">
+        <div>
+          <h1>Biblioteca</h1>
+          <img src="img/entrada-biblioteca.jpg" alt="" />
+        </div>
+        <div>
+          <p>
+            É o espaço voltado para o armazenamento, a organização, disseminação
+            e conservação do acervo bibliográfico do campus, que reúne livros
+            literários e técnicos, dicionários, periódicos, mapas, mídias (CDs e
+            DVDs), publicações institucionais, como boletins informativos e
+            revistas científicas, além dos TCCs dos alunos, somando mais de mil
+            títulos e quase oito (8) mil exemplares. O setor ainda dispõe de
+            computadores com acesso à internet para pesquisas acadêmicas e salas
+            de estudo em grupo e individual.
+          </p>
+          <p>
+            Para usufruir do acervo, através de consulta ou empréstimo
+            domiciliar, o(a) interessado(a) deve comparecer pessoalmente, a fim
+            de efetivar sua solicitação.
+          </p>
+          <p>
+            Lembrando que é necessário seguir as instruções dos avisos,
+            sobretudo quanto ao silêncio e à proibição de fazer refeições no
+            recinto. Saiba mais
+            <a
+              class="link-ti"
+              href="https://portal.ifba.edu.br/jacobina/ensino/anexos/biblioteca_normas.pdf"
+              >aqui</a
+            >
+          </p>
+        </div>
 
-          <!-- Foto 1  do carrosel-->
+        <div>
+          <h3>Empréstimo Domiciliar</h3>
+          <p>
+            Autorizado após cadastro no Sistema Integrado de Bibliotecas, o
+            Pergamum. Destina-se a toda a comunidade IFBA (estudantes
+            devidamente matriculados, professores, técnicos administrativos e
+            terceirizados), de acordo com os seguintes prazos e volumes:
+          </p>
+          <ul>
+            <li>Discentes: 3 livros/15 dias corridos;</li>
+            <li>
+              Servidores (professores e técnicos) e terceirizados: 5 livros/22
+              dias consecutivos.
+            </li>
+          </ul>
+          <p>
+            Obs.: Quando o exemplar não estiver disponível, o(a) solicitante
+            poderá fazer uma reserva virtualmente. Não serão emprestados mapas,
+            dicionários, enciclopédias, periódicos (jornais, revistas e
+            similares) e obras raras.
+          </p>
+        </div>
+        <div>
+          <img src="img/livros.jpg" alt="" />
+        </div>
+        <div>
+          <img src="img/prateleira-livros.jpg" alt="" />
+        </div>
+        <div>
+          <h3>Reserva:</h3>
+          <p>
+            Realizada virtualmente, ou pessoalmente no setor, com validade de
+            24h.
+          </p>
+          <h3>Renovação</h3>
+          <p>
+            Realizada virtualmente, ou pessoalmente no setor, por até cinco (5)
+            vezes, desde que o(a) solicitante não esteja em atraso nem o
+            material reservado.
+          </p>
+          <h3>Devolução</h3>
+          <p>
+            O exemplar retirado para empréstimo deverá ser entregue diretamente
+            na Biblioteca, mediante assinatura do recibo de devolução. Portanto,
+            os exemplares deixados nas mesas do setor não serão considerados
+            como devolvidos.
+          </p>
+          <h3>Penalidades</h3>
+          <p>
+            O não cumprimento das formalidades e dos prazos implicará no
+            impedimento de novo empréstimo pelo mesmo número de dias de atraso,
+            salvo quando a Biblioteca estiver fechada. Em caso de perda ou danos
+            à obra emprestada, deverá ser feita a reposição de volume idêntico.
+            No caso de títulos esgotados, a reposição será de obra com assunto e
+            valor equivalentes, a partir de indicação do setor.
+          </p>
+          <p>
+            Obs.: A inadimplência com a Biblioteca impedirá o(a) estudante de
+            efetuar nova matrícula.
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Atendimento: </strong>das 7h às 16h de segunda a
+            quinta-feira; teletrabalho às sextas-feiras.
+          </p>
+          <p>
+            <strong>Horário de Funcionamento do setor:</strong>das 7h às 22h de
+            segunda a quinta-feira, e das 8h às 17h na sexta-feira
+          </p>
+          <p><strong>Ramal:</strong>8710</p>
+          <p><strong>E-mail: </strong>biblioteca.jac@ifba.edu.br</p>
+        </div>
         <!-- Tiny-Swiper -->
         <div id="swiper-biblioteca">
           <div class="swiper-wrapper">
@@ -367,159 +564,188 @@
         </div>
       </section>
 
-      <br />
-      <!-- Modal do formulário -->
-      <div id="modal-form" class="modal">
-        <form id="form" action='javascript:enviar()'>
-          <fieldset class="col-2">
-            <label>Nome</label>
-            <input required type="text" />
-            <label>Email</label>
-            <input required type="email" />
-            <label>Categoria</label>
-            <select name="categoria" id="">
-              <option value="estudante">Estudante</option>
-              <option value="professor">Professor</option>
-              <option value="tae">Técnico administrativo escolar</option>
-              <option value="externo">Público externo</option>
-            </select>
-            <label>Mensagem</label>
-            <textarea name="msg" id="" rows="10" cols="20"></textarea>
+      <section id="ti" class="escondido">
+        <h1>Entrar em contato</h1>
+        <br />
+        <!-- Modal do formulário -->
+        <div id="modal-form" class="modal">
+          <form id="form" action="javascript:enviar()">
+            <fieldset class="col-2">
+              <label>Nome</label>
+              <input required type="text" />
+              <label>Email</label>
+              <input required type="email" />
+              <label>Categoria</label>
+              <select name="categoria" id="">
+                <option value="estudante">Estudante</option>
+                <option value="professor">Professor</option>
+                <option value="tae">Técnico administrativo escolar</option>
+                <option value="externo">Público externo</option>
+              </select>
+              <label>Mensagem</label>
+              <textarea name="msg" id="" rows="10" cols="20"></textarea>
             </fieldset>
             <input type="submit" value="Enviar" />
-        </form>
-      </div>
-      <script>
-        function enviar() {
-          $('#modal-confirm').modal();
-        }
-      </script>
-      <!-- Link para formulário -->
-      <a href="#modal-form" class="a-btn" rel="modal:open">Clique para entrar em contato</a>
+          </form>
+        </div>
+        <script>
+          function enviar() {
+            $("#modal-confirm").modal();
+          }
+        </script>
+        <!-- Link para formulário -->
+        <a href="#modal-form" class="a-btn" rel="modal:open"
+          >Clique para entrar em contato</a
+        >
 
-      <div id="modal-confirm" class="modal">
-        <h1 style="color: #059669;">Parabéns! Seu formulário foi enviado!</h1>
-        <a href="#" rel="modal:close"></a>
-      </div>
-    </section>
-  </main>
+        <div id="modal-confirm" class="modal">
+          <h1 style="color: #059669">Parabéns! Seu formulário foi enviado!</h1>
+          <a href="#" rel="modal:close"></a>
+        </div>
+      </section>
+    </main>
 
-  <div>
-    <footer>
-      <div id="logo-if-jacobina">
-        <picture>
-          <source srcset="img/Logo_jacobina.avif" type="image/avif" />
-          <img src="img/Logo_jacobina.webp" />
-        </picture>
-        <br />
-        <a href="https://twitter.com/ifbaoficial">
-          <i class="fa-brands fa-twitter"> </i>
+    <div>
+      <footer>
+        <div id="logo-if-jacobina">
+          <picture>
+            <source srcset="img/Logo_jacobina.avif" type="image/avif" />
+            <img src="img/Logo_jacobina.webp" />
+          </picture>
+          <br />
+          <a href="https://twitter.com/ifbaoficial">
+            <i class="fa-brands fa-twitter"> </i>
+          </a>
+          <a href="https://www.facebook.com/InstitutoFederaldaBahia">
+            <i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/ifbaoficial/">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCyCPdBXqatYjrOhqY0k3sMQ">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+        <div>
+          <h1>Institucional</h1>
+          <ul>
+            <li><a href="">O Instituto</a></li>
+            <li><a href="">Memória </a></li>
+            <li><a href="">Organograma</a></li>
+            <li><a href="">Quem é quem</a></li>
+            <li><a href="">Atribuições e cargos</a></li>
+            <li><a href="">Eleições</a></li>
+            <li><a href="">Processos seletivos</a></li>
+            <li><a href="">Assessoria internacional</a></li>
+            <li><a href="">Contatos</a></li>
+            <li><a href="">Fale conosco</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1>Ensino</h1>
+          <ul>
+            <li><a> Seja nosso aluno</a></li>
+            <li><a> Tipos de cursos</a></li>
+            <li><a> Nossos cursos</a></li>
+            <li><a> Ensino a distância</a></li>
+            <li><a> Assistência estudantil</a></li>
+            <li><a> Processo Seletivo 2024</a></li>
+            <li><a> Certificação ENCCEJA/ENEM</a></li>
+            <li><a> SISU</a></li>
+            <li><a> Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+      </footer>
+      <nav class="col-2">
+        <a href="https://gov.br">
+          <picture>
+            <source
+              srcset="img/governo-federal-brasil.avif"
+              type="image/avif"
+            />
+            <img
+              src="img/governo-federal-brasil.webp"
+              alt="Logo do Governo Federal"
+            />
+          </picture>
         </a>
-        <a href="https://www.facebook.com/InstitutoFederaldaBahia">
-          <i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/ifbaoficial/">
-          <i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCyCPdBXqatYjrOhqY0k3sMQ">
-          <i class="fa-brands fa-youtube"></i>
+
+        <a href="http://www.gov.br/acessoainformacao/">
+          <picture id="fnav-direita">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 117 49"
+              height="150"
+              shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision"
+            >
+              <defs>
+                <style type="text/css">
+                  .a {
+                    font:
+                      normal bold 11px Open Sans,
+                      sans-serif;
+                  }
+                </style>
+              </defs>
+              <circle cx="22" cy="23" r="22" fill="#fff"></circle>
+              <!-- tailwind blue 950 -->
+              <path
+                style="stroke: #172554; stroke-width: 9; stroke-linecap: round"
+                d="m 22,23 v 13"
+              ></path>
+              <path
+                style="stroke: #fff; stroke-width: 4; stroke-linejoin: round"
+                d="m 4,43 3,-6 4,3 z"
+              ></path>
+              <circle r="4.5" cy="11" cx="22" fill="#172554"></circle>
+              <g fill="#fff">
+                <text x="47" y="22">
+                  <tspan class="a" y="18">Acesso à</tspan>
+                  <tspan class="a" x="47" y="31">Informação</tspan>
+                </text>
+              </g>
+            </svg>
+          </picture>
         </a>
-      </div>
-      <div>
-        <h1>Institucional</h1>
-        <ul>
-          <li><a href="">O Instituto</a></li>
-          <li><a href="">Memória </a></li>
-          <li><a href="">Organograma</a></li>
-          <li><a href="">Quem é quem</a></li>
-          <li><a href="">Atribuições e cargos</a></li>
-          <li><a href="">Eleições</a></li>
-          <li><a href="">Processos seletivos</a></li>
-          <li><a href="">Assessoria internacional</a></li>
-          <li><a href="">Contatos</a></li>
-          <li><a href="">Fale conosco</a></li>
-        </ul>
-      </div>
-      <div>
-        <h1>Ensino</h1>
-        <ul>
-          <li><a> Seja nosso aluno</a></li>
-          <li><a> Tipos de cursos</a></li>
-          <li><a> Nossos cursos</a></li>
-          <li><a> Ensino a distância</a></li>
-          <li><a> Assistência estudantil</a></li>
-          <li><a> Processo Seletivo 2024</a></li>
-          <li><a> Certificação ENCCEJA/ENEM</a></li>
-          <li><a> SISU</a></li>
-          <li><a> Perguntas Frequentes</a></li>
-        </ul>
-      </div>
-    </footer>
-    <nav class="col-2">
-      <a href="https://gov.br">
-        <picture>
-          <source srcset="img/governo-federal-brasil.avif" type="image/avif" />
-          <img src="img/governo-federal-brasil.webp" alt="Logo do Governo Federal" />
-        </picture>
-      </a>
+      </nav>
+    </div>
 
-      <a href="http://www.gov.br/acessoainformacao/">
-        <picture id="fnav-direita">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 49" height="150" shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision">
-            <defs>
-              <style type="text/css">
-                .a {
-                  font:
-                    normal bold 11px Open Sans,
-                    sans-serif;
-                }
-              </style>
-            </defs>
-            <circle cx="22" cy="23" r="22" fill="#fff"></circle>
-            <!-- tailwind blue 950 -->
-            <path style="stroke: #172554; stroke-width: 9; stroke-linecap: round" d="m 22,23 v 13"></path>
-            <path style="stroke: #fff; stroke-width: 4; stroke-linejoin: round" d="m 4,43 3,-6 4,3 z"></path>
-            <circle r="4.5" cy="11" cx="22" fill="#172554"></circle>
-            <g fill="#fff">
-              <text x="47" y="22">
-                <tspan class="a" y="18">Acesso à</tspan>
-                <tspan class="a" x="47" y="31">Informação</tspan>
-              </text>
-            </g>
-          </svg>
-        </picture>
-      </a>
-    </nav>
+    <a href="#header" id="subir">
+      <i class="fa-solid fa-up-long"></i>
+    </a>
+  </body>
+  <!--   Plugin Vlibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
   </div>
+  <!--   Linkando scripts no fim da página-->
 
-
-  <a href="#header" id="subir">
-    <i class="fa-solid fa-up-long"></i>
-  </a>
-</body>
-<!--   Plugin Vlibras -->
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-<!--   Linkando scripts no fim da página-->
-
-<!-- Vlibras -->
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget("https://vlibras.gov.br/app");
-</script>
-<!--   Jquerry -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!--   Fontawesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!--   biblioteca Jquerrymodal -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <!-- Vlibras -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+  <!--   Jquerry -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!--   Fontawesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!--   biblioteca Jquerrymodal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
   <!-- Tiny-Swiper JS -->
   <link rel="stylesheet" href="css/carrosel.css" />
