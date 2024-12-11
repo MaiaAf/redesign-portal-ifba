@@ -1,0 +1,20 @@
+.tabela {
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: collapse; 
+    margin: 1em 0;
+    text-align: justify;
+}
+
+td {
+    padding: 1em;
+    border: 1px solid #047857;
+}
+
+/* Primeira tr*/
+
+tr:nth-child(1) {
+    background-color: #faa;
+}
