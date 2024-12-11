@@ -7,15 +7,20 @@
     <meta name="description" content="Portal do IFBA JAcobina redesenhado" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Portal IFBA Jacobina</title>
+    <!--   Css principal -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/scroll.css" />
+    <link rel="stylesheet" href="css/tabela.css" />
+
     <!--   Css do Jquerrymodal -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
     />
-    <!--   Css principal -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/scroll.css" />
-    <link rel="stylesheet" href="css/tabela.css" />
+    <!-- Css do mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
   </head>
 
   <body>
@@ -642,6 +647,8 @@
             Instituto Federal de Educação, Ciência e Tecnologia da Bahia - Campus Jacobina
             Fone: 0800 074 7400
           </p>
+
+          <div id="map"></div>
         </div>
         <h2>Que tal nos mandar uma mensagem?</h2>
         <!-- Modal do formulário -->
@@ -672,8 +679,7 @@
         </script>
         <!-- Link para formulário -->
         <a href="#modal-form" class="a-btn" rel="modal:open"
-          >Clique para entrar em contato</a
-        >
+          >Clique para entrar em contato</a>
 
         <div id="modal-confirm" class="modal">
           <h1 style="color: #059669">Parabéns! Seu formulário foi enviado!</h1>
@@ -830,7 +836,13 @@
   <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
   <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
 
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
   <!-- Scripts locais -->
   <script src="scripts/scroll.js"></script>
   <script src="scripts/carrosel.js"></script>
+  <script src="scripts/mapa.js"></script>
 </html>

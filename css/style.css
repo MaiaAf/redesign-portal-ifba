@@ -260,6 +260,11 @@ section {
 .card-um {
   max-width: fit-content;
 }
+
+#map {
+  height: 50dvh;
+}
+
 /* img  */
 img {
   max-width: 100%;
@@ -331,6 +336,10 @@ footer ul li {
   #ti {
     padding: 1rem;
     min-height: auto;
+  }
+
+  #map {
+    height: 30dvh;
   }
 }
 
