@@ -284,6 +284,17 @@ video {
   max-height: 50dvh;
 }
 
+/* Modal */
+
+#modal-mudancas {
+  height: 95dvh;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
 /* Footer */
 
